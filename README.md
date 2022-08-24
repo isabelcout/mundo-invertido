@@ -1,2 +1,2 @@
 # mundo-invertido
-Landing page do mundo invertido Stranger Things
+Landing page do mundo invertido da série Stranger Things pela Dio!
