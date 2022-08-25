@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
+/***  VARIABLES & THEMES ***/
+
 :root {
   --primary-color: #cf0f0f;
   --primary-color-contrast: #ffffff;
@@ -9,42 +11,42 @@
 }
 
 .light-theme {
-    --page-background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      #ffffff 65%,
-      rgba(255, 255, 255, 0.75) 100%
-    );
-    --header-background-color: #e3e3e3;
-    --highlight-color: #000000;
-    --featured-font-family: "Archivo", sans-serif;
-    --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
-    --character-top-image-color: #ffffff;
-    --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
-    --character-bottom-image-color: #e5e5e5;
-    --background-lamp-image: url("../images/backgrounds/lamps.png");
-    --footer-background-color: #b5bbbf;
-  }
+  --page-background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #ffffff 65%,
+    rgba(255, 255, 255, 0.75) 100%
+  );
+  --header-background-color: #e3e3e3;
+  --highlight-color: #000000;
+  --featured-font-family: "Archivo", sans-serif;
+  --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-top-image-color: #ffffff;
+  --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-bottom-image-color: #e5e5e5;
+  --background-lamp-image: url("../images/backgrounds/lamps.png");
+  --footer-background-color: #b5bbbf;
+}
 
-  .dark-theme {
-    --page-background: linear-gradient(
-      180deg,
-      #050000 0%,
-      #130404 65%,
-      rgba(19, 1, 1, 0.75) 100%
-    );
-    --header-background-color: #220f0f;
-    --highlight-color: #ffffff;
-    --featured-font-family: "Rubik Glitch", sans-serif;
-    --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
-    --character-bottom-image-color: rgba(255, 255, 255, 0.1);
-    --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
-    --character-top-image-color: #000;
-    --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
-    --footer-background-color: #000;
-  }
+.dark-theme {
+  --page-background: linear-gradient(
+    180deg,
+    #050000 0%,
+    #130404 65%,
+    rgba(19, 1, 1, 0.75) 100%
+  );
+  --header-background-color: #220f0f;
+  --highlight-color: #ffffff;
+  --featured-font-family: "Rubik Glitch", sans-serif;
+  --character-bottom-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-bottom-image-color: rgba(255, 255, 255, 0.1);
+  --character-top-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-top-image-color: #000;
+  --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
+  --footer-background-color: #000;
+}
 
-  .dark-theme button,
+.dark-theme button,
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme h3 {
@@ -55,6 +57,8 @@
 .dark-theme .invert-element {
   transform: rotateZ(180deg) scaleX(-1);
 }
+
+/***  GENERIC STYLES ***/
 
 * {
   margin: 0;
@@ -140,6 +144,8 @@ textarea:focus-visible {
   border-color: black;
 }
 
+/*** HEADER STYLES ***/
+
 header {
   background-color: var(--header-background-color);
   min-height: 850px;
@@ -158,7 +164,7 @@ header::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 90%;
-  filter: saturate(1);
+  filter: saturate(0);
   opacity: 0.2;
 }
 
@@ -187,6 +193,8 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
+/*** WORLD CHARACTERS STYLES ***/
+
 .world-characters {
   width: 100%;
   max-width: 900px;
@@ -213,11 +221,15 @@ header::before {
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
 }
 
+/*** SECTIONS STYLES ***/
+
 section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 95px;
 }
+
+/* Section 01 - Inverted World */
 
 .container {
   max-width: 1200px;
@@ -263,6 +275,8 @@ section {
   border-image-slice: 10;
 }
 
+/* Section 03 - Stranger Things Gallery */
+
 #section-stranger-things-gallery {
   width: 100%;
   background: var(--background-lamp-image) 120% / 50% no-repeat;
@@ -297,6 +311,8 @@ section {
   object-fit: cover;
   border: 10px solid var(--highlight-color);
 }
+
+/* Section 04 - Dungeons & Dragons Form */
 
 #section-form {
   flex-direction: column;
@@ -367,6 +383,8 @@ section {
   background-color: var(--primary-color-contrast);
   color: var(--field-background-color);
 }
+
+/*** FOOTER STYLES ***/
 
 footer {
   padding: 60px 0;
