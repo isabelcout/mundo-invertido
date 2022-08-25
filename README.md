@@ -32,6 +32,6 @@ Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Inve
 ## 🌎 Minhas redes sociais
 <p>
     <p>&nbsp&nbsp&nbspIsabel Coutinho<br>
-    &nbsp&nbsp&nbsp<a href="https://instagram.com/isabelcout_/">Instagram</a>&nbsp;|&nbsp;<a href="https://github.com/isabelcout">GitHub</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/isabelcoutinhodonascimento/">LinkedIn</a></p>
+    &nbsp&nbsp&nbsp<a href="mailto:isabelcoutinhors@gmail.com">Gmail</a>&nbsp;|&nbsp;<a href="https://api.whatsapp.com/send?phone=5591983779499">Whatsapp</a>&nbsp;|&nbsp;<a href="https://www.linkedin.com/in/isabelcoutinhodonascimento/">LinkedIn</a></p>
 </p>
 <br/><br/>
